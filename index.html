@@ -16,25 +16,27 @@
     <div class="row">
       <div class="large-12 columns">
         <h1>What's Your Show Count?</h1>
-        <h4>v0.0.1</h4>
+        <h4>v 0.0.1</h4>
       </div>
     </div>
     
     <div class="row">
       <div class="large-12 columns">
       	<div class="panel">
-	        <p>In early 2013, the Umphrey's community was introduced to the concept of a streaming show count and how it factored in to their existing number of shows seen. Fans new and old chimed in on this phenomenon, with many skeptics questioning the legitmacy of what became known as an adjusted show count.</p>
-	        <p>Over the past two years, a small group of dedicated fans, known as the Adjusted Show Count Collective, or ASCC, have been working on an algorithim that considers a variety of criteria to determine one's true show count. While the formula is still a work in progress, the current alpha status algorithim currently uses states, days of the week, and streamed shows.</p>
-          <p>We are working with the creators of All Things Umphrey's to allow remote authentication through this site so we can scrap the data from ATN accounts, making this a much more simpler process than manually inputting your stats.</p>
+	        <p>In early 2013, the Umphrey's community was introduced to the concept of a streaming show count and how it factored in to their existing number of shows seen. Fans new and old chimed in on this phenomenon, with many skeptics questioning the legitmacy of what became known as an adjusted show count. Even Joel had something to say:</p>
+          <blockquote class="twitter-tweet" lang="en"><p>.<a href="https://twitter.com/shimmerinshell">@shimmerinshell</a> great question. Anyone else want to weigh in? Do pantsless couch tour shows go to show count? Or, new category?</p>&mdash; Joel Cummins (@goldlikejoel) <a href="https://twitter.com/goldlikejoel/status/293764097869221888">January 22, 2013</a></blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	        <p>Over the past two years, a small group of dedicated fans, known as the Adjusted Show Count Collective, or ASCC, have been working on an algorithm that considers a variety of criteria to determine one's true show count. While the formula is still a work in progress, the alpha status algorithm currently uses states, days of the week, and streamed shows as the primary multipliers for the adjusted count.</p>
+          <p>We are working with the creators of All Things Umphrey's to allow remote authentication through this site so we can scrape the data directly from your ATN account. In the mean time, you will have to manually input your stats. Check out the links below for more information.</p>
 	        <div class="row">
 	        	<div class="large-4 medium-4 columns">
-	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+	    		<p><a href="http://www.thebort.com/index.php?topic=7656.0">Original new(B)ort Discussion</a><br />Read the thread that started the debate on show counts.</p>
 	    	</div>
 	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+	        		<p><a href="http://allthings.umphreys.com/stats/run?type=user&arg=">Your ATN Stats</a><br />Append your ATN username after the 'arg=' part of the URL.</p>
 	        	</div>
 	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+	        		<p><a href="http://twitter.com/showcount">@showcount</a><br />Ping us on Twitter if you have questions or feedback!</p>
 	        	</div>        
 					</div>
       	</div>
@@ -42,85 +44,89 @@
     </div>
 
     <div class="row">
-      <div class="large-8 medium-8 columns">
-        
-        
-        <hr />
+      <div class="large-8 medium-8 small-centered columns">
                 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        <h5>Please Enter Your Relevant ATN Stats Here:</h5>
         <form>
 				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
+				    <div class="large-4 medium-4 columns">
+				      <label>Shows Seen Live</label>
+				      <input type="text" placeholder="Not Enough" />
 				    </div>
+				    <div class="large-4 medium-4 columns">
+				      <label>Sunday-Wednesday Shows</label>
+				      <input type="text" placeholder="Small Market Bonus" />
+				    </div>
+            <div class="large-4 medium-4 columns">
+              <label>Pre-Mantis Shows</label>
+              <input type="text" placeholder="All Downhill After" />
+            </div>
 				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
+          <div class="row">
+            <div class="large-4 medium-4 columns">
+              <label>Shows Streamed Live</label>
+              <input type="text" placeholder=".25 No More" />
+            </div>
+            <div class="large-4 medium-4 columns">
+              <label>Free Streamed Shows</label>
+              <input type="text" placeholder="Includes TourGig Code Shares" />
+            </div>
+            <div class="large-4 medium-4 columns">
+              <label>iClips Streams</label>
+              <input type="text" placeholder="RIP iClips :(" />
+            </div>
+          </div>
 				  <div class="row">
 				    <div class="large-12 columns">
-				      <label>Select Box</label>
+				      <label>What part of the country do you live in?</label>
 				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
+				        <option value="midwest">Midwest</option>
+				        <option value="southeast">Southeast</option>
+				        <option value="northeast">Northeast</option>
+				        <option value="colorado">Colorado</option>
+                <option value="other">Other / International</option>
 				      </select>
 				    </div>
 				  </div>
 				  <div class="row">
 				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+				      <label>Have you been backstage before?</label>
+				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Yes</label>
+				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">No</label>
+              <input type="radio" name="pokemon" value="Green" id="pokemonGreen"><label for="pokemonGreen">UM VIP Custy(mer)</label>
+
 				    </div>
 				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+				      <label>Which BG Shows Have You Attended?</label>
+				      <input id="checkbox1" type="checkbox"><label for="checkbox1">I</label>
+				      <input id="checkbox2" type="checkbox"><label for="checkbox2">II</label>
+              <input id="checkbox3" type="checkbox"><label for="checkbox3">III (UM Monday)</label>
 				    </div>
 				  </div>
           <div class="row">
             <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
+              <label>Additional Comments for the ASCC's Consideration</label>
+              <textarea placeholder="I've been to all five UMBowls, have VIP tickets to Vegas, and one time Stasik winked at me during Brendan's solo in 2x2."></textarea>
             </div>
           </div>
         </form>
       </div> 
     </div>
 
-    <hr />
 
     <div class="row">
-      <div class="large-8 medium-8 columns">   
-
-      <a href="#" data-reveal-id="myModal" class="small button">Calculate My Adjusted Show Count!</a>
+      <div class="large-8 medium-8 small-centered columns">   
+        <div class="button-center">  
+          <a href="#" data-reveal-id="myModal" class="small button">Calculate My Adjusted Show Count!</a>
+        </div>
 
       <div id="myModal" class="reveal-modal" data-reveal>
-        <h2>Awesome</h2>
-        <div id="player"></div>
-        <a class="close-reveal-modal">&#215;</a>
-      </div>
+        <div class="reveal-modal-inner">
+          <h4>You've seen ChicagooOOOoooOOOO shows according to the ASCC</h2>
+          <div id="player"></div>
+          <a class="close-reveal-modal">&#215;</a>
+         </div>
+        </div>
     </div>
     
     <script src="js/vendor/jquery.js"></script>
