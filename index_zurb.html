@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>What's Your Show Count?</title>
+    <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
 
     <!-- This is how you would link your custom stylesheet -->
@@ -15,17 +15,16 @@
     
     <div class="row">
       <div class="large-12 columns">
-        <h1>What's Your Show Count?</h1>
-        <h4>v0.0.1</h4>
+        <h1>Welcome to Foundation</h1>
       </div>
     </div>
     
     <div class="row">
       <div class="large-12 columns">
       	<div class="panel">
-	        <p>In early 2013, the Umphrey's community was introduced to the concept of a streaming show count and how it factored in to their existing number of shows seen. Fans new and old chimed in on this phenomenon, with many skeptics questioning the legitmacy of what became known as an adjusted show count.</p>
-	        <p>Over the past two years, a small group of dedicated fans, known as the Adjusted Show Count Collective, or ASCC, have been working on an algorithim that considers a variety of criteria to determine one's true show count. While the formula is still a work in progress, the current alpha status algorithim currently uses states, days of the week, and streamed shows.</p>
-          <p>We are working with the creators of All Things Umphrey's to allow remote authentication through this site so we can scrap the data from ATN accounts, making this a much more simpler process than manually inputting your stats.</p>
+	        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
+	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+	        <p>Once you've exhausted the fun in this document, you should check out:</p>
 	        <div class="row">
 	        	<div class="large-4 medium-4 columns">
 	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
@@ -43,7 +42,45 @@
 
     <div class="row">
       <div class="large-8 medium-8 columns">
-        
+        <h5>Here&rsquo;s your basic grid:</h5>
+        <!-- Grid Example -->
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="callout panel">
+              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <p>Six columns</p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <p>Six columns</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+        </div>
         
         <hr />
                 
@@ -99,27 +136,28 @@
 				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
 				    </div>
 				  </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div> 
-    </div>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Textarea Label</label>
+				      <textarea placeholder="small-12.columns"></textarea>
+				    </div>
+				  </div>
+				</form>
+      </div>     
 
-    <hr />
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">   
-
-      <a href="#" data-reveal-id="myModal" class="small button">Calculate My Adjusted Show Count!</a>
-
-      <div id="myModal" class="reveal-modal" data-reveal>
-        <h2>Awesome</h2>
-        <div id="player"></div>
-        <a class="close-reveal-modal">&#215;</a>
+      <div class="large-4 medium-4 columns">
+			  <h5>Try one of these buttons:</h5>
+			  <p><a href="#" class="small button">Simple Button</a><br/>
+        <a href="#" class="small radius button">Radius Button</a><br/>
+        <a href="#" class="small round button">Round Button</a><br/>            
+        <a href="#" class="medium success button">Success Btn</a><br/>
+        <a href="#" class="medium alert button">Alert Btn</a><br/>
+        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
+				<div class="panel">
+        	<h5>So many components, girl!</h5>
+        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
+        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        </div>
       </div>
     </div>
     
@@ -127,57 +165,6 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
-
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-
-      function onYouTubeIframeAPIReady() {
-          player = new YT.Player('player', {
-              height: '315',
-              width: '560',
-              videoId: 'UpgEGMCbHhg',
-              events: {
-                  'onStateChange': onPlayerStateChange
-              }
-          });
-      }
-
-
-      function onPlayerStateChange(event) {
-          if (event.data == YT.PlayerState.PLAYING) {
-            //player is playing
-          } else {
-            //player is paused
-          }
-      }
-
-      function stopVideo() {
-          player.stopVideo();
-      }
-
-      function playVideo() {
-        player.playVideo();
-      }
-
-      function pauseVideo() {
-        player.pauseVideo();
-      }
-
-
-      $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
-          playVideo();
-      });
-
-      $(document).on('closed.fndtn.reveal', '[data-reveal]', function () {
-        pauseVideo();
-      });
     </script>
   </body>
 </html>
